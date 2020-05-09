@@ -1,0 +1,13 @@
+import { printYearAndVarietyBreakdown } from '../../utils/handlers';
+
+const overAllData = [
+	require(`../../data/11YVCHAR001.json`),
+	require(`../../data/11YVCHAR002.json`),
+	require(`../../data/15MPPN002-VK.json`),
+];
+
+export default (req, res) => {
+	const final = printYearAndVarietyBreakdown(overAllData);
+
+	res.json(final);
+};

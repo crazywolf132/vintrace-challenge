@@ -1,0 +1,73 @@
+.core
+	display: flex
+	justify-content: space-between
+	font-family: 'DM Sans', sans-serif
+	width: 100%
+	height: 100%
+	background: #fff
+	border-radius: 4px
+	box-shadow: 0 0.3px 2.2px rgba(0, 0, 0, 0.011), 0 0.7px 5.3px rgba(0, 0, 0, 0.016), 0 1.3px 10px rgba(0, 0, 0, 0.02), 0 2.2px 17.9px rgba(0, 0, 0, 0.024), 0 4.2px 33.4px rgba(0, 0, 0, 0.029), 0 10px 80px rgba(0, 0, 0, 0.04)
+	overflow: hidden
+
+	.mainContent
+		width: 100%
+		display: flex
+		flex-direction: column
+		flex: 1
+		padding: 15px 20px 0 20px
+
+		.header
+			position: relative
+			justify-content: center
+			font-size: 16px
+			margin: 0 auto
+			width: 100%
+
+			.title
+				text-align: center
+
+			.search
+				width: 100%
+				padding: 1.5em
+				border: none
+				font-weight: 500
+				border-radius: 4px
+				background-color: #f1f1f1
+
+		.loading
+			text-align: center
+			margin: 2em auto
+
+		.productZone
+			width: calc(100%)
+			height: calc(100% - 4.2em)
+			justify-content: center
+			top: 4.2em
+			left: 300px
+			border-radius: 0px 0px 15px 0px
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			overflow-x: scroll
+			margin-bottom: 100px
+
+			.product
+				background: #F8FAFB
+				position: relative
+				margin: 33px 30px
+				width: 180px
+				height: 250px
+				box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25)
+				border-radius: 5px
+				text-align: center
+
+				&:hover
+					transform: scale(1.02)
+					cursor: pointer
+
+				img
+					width: inherit
+					border-radius: 10px 10px 0 0
+
+				.name
+					margin: 2px
